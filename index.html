@@ -18,14 +18,14 @@
     <div id="intro">
       <h1>Which programming language is right for you?</h1>
       <h3>Trapped in analysis paralysis? Let me tell you what to do!</h2>
-      <p>Please answer the following questions and let the magic 8 ball guide your future...</p>
     </div>
     <div id="gif">
       <img src="img/8ball.gif" alt="Animation of 8 ball">
     </div>
     <div id="form">
       <form id="select-form">
-        <label for="nameInput">Please enter your name: </label>
+        <p>Please answer the following questions and let the magic 8 ball guide your future...</p>
+        <label for="nameInput">Enter your name: </label>
         <input type="text" id="nameInput" name="nameInput">
         <br>
         <label for="favorite">Which do you prefer? </label>
@@ -39,9 +39,9 @@
         <label for="speed">How fast do you want your runtime performance? </label>
         <br>
         <select id="speed" name="speed">
-          <option value="js">Hare, get me to the finish line</option>
-          <option value="python">Tortoise, I am patient</option>
-          <option value="ruby">Chicken, I'll get there eventually</option>
+          <option value="js">Hare: Get me to the finish line</option>
+          <option value="python">Tortoise: I am patient</option>
+          <option value="ruby">Chicken: I'll get there eventually</option>
         </select>
         <br>
         <label for="end">Would you rather focus on back-end or full-stack (both front/back end)? </label>
@@ -68,14 +68,11 @@
           <option value="python">I'm a newbie</option>
         </select>
         <br>
-        <label for="born">Tell me your date of birth</label>
+        <label for="born">When is your birthday?</label>
         <input id="born" type="date">
         <br>
         <button type="submit" value="send">Tell me now!</button>
       </form>
-    </div>
-    <div class="comic" id="img">
-      <img src="img/comic.webp" alt="Programming Langauge Halloween costumes">
     </div>
     <div id="results" class="hidden card">
       <div class="card-body">
@@ -85,6 +82,9 @@
           more.</p>
         <button type="button" class="hidden" id="reset">I don't trust you...Try Again</button>
       </div>
+    </div>
+    <div class="comic" id="img">
+      <img src="img/comic.webp" alt="Programming Langauge Halloween costumes">
     </div>
   </div>
 

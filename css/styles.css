@@ -1,5 +1,7 @@
 body {
   background-image: url('/img/bubbles.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   display: flex;
@@ -19,17 +21,14 @@ body {
   border: 3px solid #042c38;
   text-align: center;
 }
-/* #gif {
-  height: 100px;
-  width: auto;
-} */
+#gif {
+  border: 3px solid #042c38;
+}
 #form {
   background-color: #4492c9;
   border: 3px solid #042c38;
   padding: 10px;
-  border-radius: 1%;
-  width: 75vw;
-  display: inline;
+  border-radius: 1%
 }
 label {
   line-height: 26px;
@@ -41,16 +40,14 @@ input {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-/* button {
-  text-align: center;
-} */
-/* #img {
-} */
+#img {
+  border: 3px solid #042c38;
+}
+.hidden {
+  display: none;
+}
 #results {
   background-color: #54c7d6;
   border: 5px solid #042c38;
   padding: 10px;
-}
-.hidden {
-  display: none;
 }
