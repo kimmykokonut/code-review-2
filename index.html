@@ -15,6 +15,9 @@
   <p>Please answer the following questions and let the magic 8 ball guide your future...</p>
   
   <form id="select-form">
+    <label for="name">Please enter your name</label>
+    <input type="text" id="name" name="name">
+    <br>
     <label for="favorite">Which do you prefer? </label>
     <select id="favorite" name="favorite">
       <option value="ruby">Gemstones, I'm fancy</option>
@@ -60,6 +63,8 @@
   <div id="results" class="hidden">
     <h2>The Magic 8 Ball has predicted...</h2>
     <p id="output"></p>
+    <p>Here are some links to learn more: </p>
+    <!-- links to epicodus here -->
     <button type="button" class="hidden" id="reset">I don't trust you...Try Again</button>
 
   </div>
