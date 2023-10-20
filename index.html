@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
@@ -13,16 +16,20 @@
 <body>
   <div class="container">
     <div id="intro">
-    <h1>Which programming language is right for you?</h1>
-    <h2>Trapped in analysis paralysis? Let me tell you what to do!</h2>
-    <p>Please answer the following questions and let the magic 8 ball guide your future...</p>
+      <h1>Which programming language is right for you?</h1>
+      <h3>Trapped in analysis paralysis? Let me tell you what to do!</h2>
+      <p>Please answer the following questions and let the magic 8 ball guide your future...</p>
+    </div>
+    <div id="gif">
+      <img src="img/8ball.gif" alt="Animation of 8 ball">
     </div>
     <div id="form">
       <form id="select-form">
-        <label for="nameInput">Please enter your name</label>
+        <label for="nameInput">Please enter your name: </label>
         <input type="text" id="nameInput" name="nameInput">
         <br>
         <label for="favorite">Which do you prefer? </label>
+        <br>
         <select id="favorite" name="favorite">
           <option value="ruby">Gemstones, I'm fancy</option>
           <option value="python">Snakes, I'm sneaky</option>
@@ -30,6 +37,7 @@
         </select>
         <br>
         <label for="speed">How fast do you want your runtime performance? </label>
+        <br>
         <select id="speed" name="speed">
           <option value="js">Hare, get me to the finish line</option>
           <option value="python">Tortoise, I am patient</option>
@@ -37,6 +45,7 @@
         </select>
         <br>
         <label for="end">Would you rather focus on back-end or full-stack (both front/back end)? </label>
+        <br>
         <select id="end" name="end">
           <option value="ruby">Back-end only, I'm the wizard behind the curtain</option>
           <option value="python">Front-end only, make it pretty</option>
@@ -44,6 +53,7 @@
         </select>
         <br>
         <label for="read">How much do you care about the syntax being easy to read?</label>
+        <br>
         <select id="read" name="read">
           <option value="python">Keep it as close to English, please!</option>
           <option value="js">The more semicolons the better! Bring it on.</option>
@@ -51,6 +61,7 @@
         </select>
         <br>
         <label for="stereotype">What do you want your langauge to say about you?</label>
+        <br>
         <select id="stereotype" name="stereotype">
           <option value="js">I'm great at problem solving...because I've had So much practice</option>
           <option value="ruby">I'm willing and able to build apps quickly...but not maintain them</option>
