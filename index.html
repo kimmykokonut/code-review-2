@@ -13,36 +13,37 @@
   <h1>Which programming language is right for you?</h1>
   <h2>Trapped in analysis paralysis? Let me tell you what to do!</h2>
   <p>Please answer the following questions and let the magic 8 ball guide your future...</p>
+  
   <form id="select-form">
-    <label for="q1">Which do you prefer? </label>
+    <label for="favorite">Which do you prefer? </label>
     <select id="favorite" name="favorite">
       <option value="ruby">Gemstones, I'm fancy</option>
       <option value="python">Snakes, I'm sneaky</option>
       <option value="js">Coffee, I'm tired</option>
     </select>
     <br>
-    <label for="q2">How fast do you want your runtime performance? </label>
+    <label for="speed">How fast do you want your runtime performance? </label>
     <select id="speed" name="speed">
       <option value="js">Hare, get me to the finish line</option>
       <option value="python">Tortoise, I am patient</option>
       <option value="ruby">Chicken, I'll get there eventually</option>
     </select>
     <br>
-    <label for="q3">Would you rather focus on back-end or full-stack (both front/back end)? </label>
+    <label for="end">Would you rather focus on back-end or full-stack (both front/back end)? </label>
     <select id="end" name="end">
       <option value="ruby-python">Back-end only, I'm the wizard behind the curtain</option>
       <option value="null">Front-end only, make it pretty</option>
       <option value="js">Full-stack, I want it all</option>
     </select>
     <br>
-    <label for="q4">How much do you care about the syntax being easy to read?</label>
+    <label for="read">How much do you care about the syntax being easy to read?</label>
     <select id="read" name="read">
       <option value="python">Keep it as close to English, please!</option>
       <option value="js">The more semicolons the better! Bring it on.</option>
       <option value="ruby">It would be nice but I don't want that to be the only factor</option>
     </select>
     <br>
-    <label for="q5">What do you want your langauge to say about you?</label>
+    <label for="stereotype">What do you want your langauge to say about you?</label>
     <select id="stereotype" name="stereotype">
       <option value="js">I'm great at problem solving...because I've had So much practice</option>
       <option value="ruby">I'm willing and able to build apps quickly...but not maintain them</option>
@@ -53,11 +54,16 @@
     <input id="born" type="date">
     <br>
     <button type="submit" value="send">Tell me now!</button>
-    <button type="reset" value="clear">I don't trust you...Try Again</button>
   </form>
+  <img src="img/comic.webp" alt="Programming Langauge Halloween costumes">
 
-  <h2>The Magic 8 Ball has predicted...</h2>
-  <p id="output"></p>
+  <div id="results" class="hidden">
+    <h2>The Magic 8 Ball has predicted...</h2>
+    <p id="output"></p>
+    <button type="button" class="hidden" id="reset">I don't trust you...Try Again</button>
+
+  </div>
+
 </body>
 
 </html>
