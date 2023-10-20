@@ -9,7 +9,7 @@ function evaluateResult(selectFav, selectSpeed) {
   } else if (("python" === selectFav) && (selectFav === selectSpeed)) {
     result = nameValue + ", Python Power! You should learn Python."
   } else {
-    result = nameValue + ", Your interests vary too much to choose any language, try again";
+    result = nameValue + ", Your interests vary too much to choose any language, try again!";
   }
   document.getElementById("output").innerText = result.toString();
   return result

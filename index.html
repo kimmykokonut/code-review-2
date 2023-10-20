@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +11,11 @@
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
 </head>
-
 <body>
   <div class="container">
     <div id="intro">
       <h1>Which programming language is right for you?</h1>
-      <h3>Trapped in analysis paralysis? Let me tell you what to do!</h2>
+      <h3>Trapped in <em>analysis</em> paralysis? Let me tell you what to do!</h2>
     </div>
     <div id="gif">
       <img src="img/8ball.gif" alt="Animation of 8 ball">
@@ -68,8 +66,6 @@
           <option value="python">I'm a newbie</option>
         </select>
         <br>
-        <label for="born">When is your birthday?</label>
-        <input id="born" type="date">
         <br>
         <button type="submit" value="send">Tell me now!</button>
       </form>
@@ -78,7 +74,14 @@
       <div class="card-body">
         <h2 class="card-title">The Magic 8 Ball has predicted...</h2>
         <p id="output"></p>
-        <p>Have you thought about a coding bootcamp? See <a href="https://www.epicodus.com/"> Epicodus </a>to learn
+        <h5>Learn more here:</h4>
+        <ul>
+          <li><a href="https://www.learnrubyonline.org/">Ruby</a></li>
+          <li><a href="https://www.learnpython.org/">Python</a></li>
+          <li><a href="https://www.codecademy.com/learn/introduction-to-javascript">JavaScript</a></li>
+        </ul>
+        <h5>Have you thought about a coding bootcamp?</p>
+        <p>See <a href="https://www.epicodus.com/"> Epicodus </a>to learn
           more.</p>
         <button type="button" class="hidden" id="reset">I don't trust you...Try Again</button>
       </div>
@@ -87,7 +90,5 @@
       <img src="img/comic.webp" alt="Programming Langauge Halloween costumes">
     </div>
   </div>
-
 </body>
-
 </html>
