@@ -1,5 +1,5 @@
 body {
-  background-image: url('/img/bubbles.jpg');
+  background-image: url('../img/bubbles.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

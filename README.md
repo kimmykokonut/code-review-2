@@ -46,6 +46,7 @@ Demonstrate use of forms and branching
 ## Known Bugs
 
 * None known
+(Updates desired: Align button center, resize img&gif, error message if empty fields submitted, improve conditionals to evaluate all 15 answers)
 
 ## License
 
