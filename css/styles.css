@@ -1,3 +1,21 @@
+body {
+  background-image: url('/img/bubbles.jpg');
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: auto;
+}
+#intro {
+  background-color: blanchedalmond;
+  border: 3px solid blue;
+}
+
+
+
 .hidden {
   display: none;
 }

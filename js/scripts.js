@@ -11,8 +11,6 @@ function handleSelect(event) {
 function evaluateResult(selectFav, selectSpeed) {
   const nameInput = document.getElementById("nameInput").value;
   const nameValue = nameInput.toString();
-  console.log(nameInput);
-  console.log(nameValue);
   let result;
   if ("js" === selectFav && selectFav && selectSpeed) {
     result = nameValue + ", JavaScript is the starting path for you";
