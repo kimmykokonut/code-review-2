@@ -9,15 +9,19 @@ function handleSelect(event) {
 }
 
 function evaluateResult(selectFav, selectSpeed) {
+  const nameInput = document.getElementById("nameInput").value;
+  const nameValue = nameInput.toString();
+  console.log(nameInput);
+  console.log(nameValue);
   let result;
   if ("js" === selectFav && selectFav && selectSpeed) {
-    result = "JavaScript is the starting path for you";
+    result = nameValue + ", JavaScript is the starting path for you";
   } else if ("ruby" === selectFav && selectFav === selectSpeed) {
-    result = "Follow the Ruby Road!";
+    result = nameValue + ", Follow the Ruby Road!";
   } else if ("python" === selectFav && selectFav === selectSpeed) {
-    result = "Python Power!"
+    result = nameValue + ", Power to the Python!"
   } else {
-    result = "Your answers don't align with just one language. I am unable to guide you."
+    result = "Your interests vary too much to choose any language";
   }
   document.getElementById("output").innerText = result.toString();
   return result
