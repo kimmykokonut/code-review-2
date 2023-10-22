@@ -1,6 +1,7 @@
 function evaluateResult(selectFav, selectSpeed) {
   const nameInput = document.getElementById("nameInput").value;
   const nameValue = nameInput.toString();
+    
   let result;
   if (("js" === selectFav) && (selectFav === selectSpeed)) {
     result = nameValue + ", JavaScript is the starting path for you";
@@ -14,6 +15,23 @@ function evaluateResult(selectFav, selectSpeed) {
   document.getElementById("output").innerText = result.toString();
   return result
 }
+
+function evalHoroscope() {  //!new function attempt
+  let dobInput = document.getElementById("dobInput").value;
+  let dob = dobInput.split('-');
+  const by = parseInt(dob[0]);
+  const bm = parseInt(dob[1]);
+  const bd = parseInt(dob[2]);
+  let horoResult;
+  if (((bm === 03) && (bd >= 21)) || (bm === 04 && bd < 21)) {
+    horoResult = "You are an Aries. \nHere is your horoscope: If you feel the need to break free of restrictions but are not sure what to do, just follow the first idea that comes into your head. Over the next few weeks acting on hunches could pay off both emotionally and financially, so trust yourself more.";
+  } else if ((bm === 04 && bd >=20) || (bm === 05 && bd < 21)) {
+    // horoResult = "Y"; let off here
+  }
+
+  document.getElementById("horoscope").innerText = horoResult.toString();
+  return horoResult
+}
 function handleSelect(event) {
   event.preventDefault();
   const selectFav = document.getElementById("favorite").value;
@@ -22,6 +40,7 @@ function handleSelect(event) {
   const selectRead = document.getElementById("read").value;
   const selectStereo = document.getElementById("stereotype").value;
   let result = evaluateResult(selectFav, selectSpeed);
+  let horoResult = evalHoroscope(); //!!!new
 }
 function resetPage() {
   results.setAttribute("class", "hidden");
