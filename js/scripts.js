@@ -15,7 +15,6 @@ function evaluateResult(selectFav, selectSpeed) {
   document.getElementById("output").innerText = result.toString();
   return result
 }
-
 function evalHoroscope() { 
   let dobInput = document.getElementById("dobInput").value;
   let dob = dobInput.split('-');
@@ -50,7 +49,6 @@ function evalHoroscope() {
   } else {
     horoResult = "There seems to be an error, Try again"
   }
-
   document.getElementById("horoscope").innerText = horoResult.toString();
   return horoResult
 }
@@ -74,6 +72,23 @@ function resetPage() {
   document.getElementById("stereotype").value = null;
 }
 window.addEventListener("load", function () {
+  const page = document.querySelector('.page');
+  console.log('page');
+  const darkMode = document.querySelector('.button-dark');
+  console.log('darkMode');
+  darkMode.addEventListener("click", function() {
+    console.log('dark clicked');
+    page.classList.remove('light-mode');
+    page.classList.add('dark-mode');
+  });
+
+  const lightMode = document.querySelector('.button-light');
+  lightMode.addEventListener("click", function() {
+    console.log('light clicked');
+    page.classList.remove('dark-mode');
+    page.classList.add('light-mode');
+  });
+
   const form = document.querySelector("form");
   const resetBtn = document.querySelector("button#reset");
   const results = document.querySelector("div#results");

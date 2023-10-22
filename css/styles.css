@@ -1,7 +1,39 @@
 body {
-  background-image: url('../img/bubbles.jpg');
+  background-image: url(../img/bubbles.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.dark-mode {
+  background-color: black;
+  color: whitesmoke;
+  background-image: none;
+}
+.dark-mode .container {
+  background-color: black;
+}
+.dark-mode #intro {
+  background-color: black;
+}
+.dark-mode #form {
+  background-color: black;
+}
+.dark-mode #results {
+  background-color: black;
+}
+.button-dark {
+  margin-left: 5%;
+  margin-top: 3%;
+  background-color: rgb(56, 45, 171);
+}
+.button-dark:hover {
+  background-color: black;  
+  color: white;
+  transition-duration: 2s;
+}
+.button-light:hover {
+  background-color: hotpink;
+  color: white;
+  transition-duration: 2s;
 }
 .container {
   display: flex;
