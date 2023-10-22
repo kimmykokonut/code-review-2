@@ -41,7 +41,7 @@ Demonstrate use of forms and branching
 3. To see it rendered in a browser, right click on the index.html file in VS Code and choose "Open with Live Server"
 #### _If you do not have Live Server extension installed in VS Code, directions are here: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer_
 
-#### _Optionally if you do not want to see my code or fork or clone, you may just enjoy the finished result on my github pages. (linked above)_
+#### _Optionally if you do not want to see my code or fork or clone, you may just enjoy the finished result on my github pages. _https://kimmykokonut.github.io/language-suggester/_
 
 ## Known Bugs
 
