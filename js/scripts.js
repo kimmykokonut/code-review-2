@@ -16,12 +16,11 @@ function evaluateResult(selectFav, selectSpeed) {
   return result
 }
 
-function evalHoroscope() {  //!new function attempt
+function evalHoroscope() { 
   let dobInput = document.getElementById("dobInput").value;
   let dob = dobInput.split('-');
   const by = parseInt(dob[0]);
   const bm = parseInt(dob[1]);
-  console.log(bm);
   const bd = parseInt(dob[2]);
   let horoResult;
   if (((bm === 3) && (bd >= 21)) || (bm === 4 && bd <= 19)) {
@@ -63,7 +62,7 @@ function handleSelect(event) {
   const selectRead = document.getElementById("read").value;
   const selectStereo = document.getElementById("stereotype").value;
   let result = evaluateResult(selectFav, selectSpeed);
-  let horoResult = evalHoroscope(); //!!!new
+  let horoResult = evalHoroscope(); 
 }
 function resetPage() {
   results.setAttribute("class", "hidden");
