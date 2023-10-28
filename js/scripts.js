@@ -1,6 +1,5 @@
 function evaluateResult(selectFav, selectSpeed) {
-  const nameInput = document.getElementById("nameInput").value;
-  const nameValue = nameInput.toString();
+  const nameValue = document.getElementById("nameInput").value;
     
   let result;
   if (("js" === selectFav) && (selectFav === selectSpeed)) {
@@ -8,17 +7,16 @@ function evaluateResult(selectFav, selectSpeed) {
   } else if (("ruby" === selectFav) && (selectFav === selectSpeed)) {
     result = nameValue + ", Follow the Ruby Road! You should learn Ruby.";
   } else if (("python" === selectFav) && (selectFav === selectSpeed)) {
-    result = nameValue + ", Python Power! You should learn Python."
+    result = nameValue + ", Python Power! You should learn Python.";
   } else {
     result = nameValue + ", Your interests vary too much to choose any language, try again!";
   }
   document.getElementById("output").innerText = result.toString();
-  return result
+  return result;
 }
 function evalHoroscope() { 
   let dobInput = document.getElementById("dobInput").value;
   let dob = dobInput.split('-');
-  const by = parseInt(dob[0]);
   const bm = parseInt(dob[1]);
   const bd = parseInt(dob[2]);
   let horoResult;
@@ -47,10 +45,9 @@ function evalHoroscope() {
   } else if ((bm === 2 && bd >= 19) || (bm === 3 && bd <= 20)) {
     horoResult = "Pisces \nHoroscope: The message of the stars for the coming week is that you must go your own way and do your own thing and ignore those who say you need to be more unneighborly. If others want your friendship they would be wise not to get in your way.";
   } else {
-    horoResult = "There seems to be an error, Try again"
+    horoResult = "There seems to be an error, Try again";
   }
-  document.getElementById("horoscope").innerText = horoResult.toString();
-  return horoResult
+  return horoResult;
 }
 function handleSelect(event) {
   event.preventDefault();
@@ -61,8 +58,10 @@ function handleSelect(event) {
   const selectStereo = document.getElementById("stereotype").value;
   let result = evaluateResult(selectFav, selectSpeed);
   let horoResult = evalHoroscope(); 
+  document.getElementById("horoscope").innerText = horoResult;
 }
 function resetPage() {
+  let results = document.getElementById("results");
   results.setAttribute("class", "hidden");
   document.getElementById("nameInput").value = null;
   document.getElementById("favorite").value = null;
@@ -73,27 +72,23 @@ function resetPage() {
 }
 window.addEventListener("load", function () {
   const page = document.querySelector('.page');
-  console.log('page');
   const darkMode = document.querySelector('.button-dark');
-  console.log('darkMode');
   darkMode.addEventListener("click", function() {
-    console.log('dark clicked');
     page.classList.remove('light-mode');
     page.classList.add('dark-mode');
   });
 
   const lightMode = document.querySelector('.button-light');
   lightMode.addEventListener("click", function() {
-    console.log('light clicked');
     page.classList.remove('dark-mode');
     page.classList.add('light-mode');
   });
 
   const form = document.querySelector("form");
   const resetBtn = document.querySelector("button#reset");
-  const results = document.querySelector("div#results");
+  let results = document.querySelector("div#results");
   form.addEventListener("submit", handleSelect);
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", function () {
     results.removeAttribute("class");
     resetBtn.removeAttribute("class");
   });
